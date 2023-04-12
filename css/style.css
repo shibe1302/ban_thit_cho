@@ -135,6 +135,19 @@ html {
   background-color: transparent;
   box-shadow: inset 0 0 0 3px white;
 }
+.link:visited,
+.link:link {
+  display: inline-block;
+  color: #f38a19;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding: 5px;
+}
+.link:hover,
+.link:active {
+  color: #15c79d;
+  border-bottom: none;
+}
 .margin-right-sm {
   margin-right: 1.6rem !important;
 }
@@ -180,11 +193,15 @@ html {
   column-gap: 6.4rem;
   row-gap: 9.6rem;
 }
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
 .grid--center-v {
   align-items: center;
 }
 .grid--2-cols {
   grid-template-columns: repeat(2, 1fr);
+  color: #1d1d1d;
 }
 .grid--3-cols {
   grid-template-columns: repeat(3, 1fr);
@@ -268,12 +285,18 @@ html {
   box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.075);
   border-radius: 12px;
   overflow: hidden;
+  transition: all 0.5s;
+}
+.meal:hover {
+  transform: translateY(-2rem);
 }
 .meal-content {
   padding: 3.2rem 4.8rem 4.8rem 4.8rem;
 }
 .meal-img {
   width: 100%;
+  height: 25rem;
+  object-fit: cover;
 }
 .meal-tags {
   margin-bottom: 1.2rem;
@@ -319,4 +342,177 @@ html {
 }
 .step-description strong {
   font-size: 2.6rem;
+}
+.list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.all-recipes {
+  text-align: center;
+  font-size: 2.4rem;
+}
+.list-item {
+  display: block;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+.list-ion {
+  width: 3rem;
+  height: 3rem;
+  color: #f38a19;
+}
+.heading-tertiary--diet {
+  font-size: 4rem;
+}
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+.center-text {
+  text-align: center;
+}
+.section-testimonial {
+  background-color: #1e3746;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.testimonial {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 4.8rem;
+  column-gap: 8rem;
+}
+.testimonial-containert {
+  padding: 9.6rem;
+}
+.testimonial1-img {
+  width: 6.4rem;
+  border-radius: 50%;
+  margin-bottom: 1.2rem;
+}
+.testimonial1-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 1.6rem;
+  color: #ffffff;
+}
+.testimonial1-name {
+  font-size: 1.6rem;
+  color: #9a9a9a;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  padding: 1.6rem;
+}
+.gallery-item {
+  overflow: hidden;
+}
+.gallery-item img {
+  display: block;
+  width: 100%;
+  height: 22rem;
+  object-fit: cover;
+  transition: all 0.6s;
+}
+.gallery-item img:hover {
+  transform: scale(1.1);
+}
+.section-pricing {
+  padding: 9.6rem 0;
+  color: #1e3746;
+}
+.plan-header {
+  text-align: center;
+  margin-bottom: 5.4rem;
+}
+.plan-name {
+  color: #ffa545;
+  font-weight: 600;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75;
+  margin-bottom: 3.2rem;
+}
+.plan-price {
+  font-size: 7.4rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1.6rem;
+}
+.plan-price span {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-right: 0.5rem;
+}
+.plan-tetx {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #f9f9f9;
+}
+.plan-sign-up {
+  text-align: center;
+  margin-top: 4.8rem;
+}
+.pricing-plan {
+  background-color: #466273;
+  border-radius: 11px;
+  padding: 4.8rem;
+  width: 75%;
+}
+.colorwhite {
+  color: #f9f9f9;
+}
+.pricing-plan--thanhviendong {
+  justify-self: end;
+}
+.pricing-plan--thanhviendong2 {
+  position: relative;
+  background-color: #354b59;
+  overflow: hidden;
+}
+.pricing-plan--thanhviendong2::after {
+  content: "Ban chay nhat";
+  position: absolute;
+  top: 7%;
+  right: -18%;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #3f3f3f;
+  padding: 0.75rem 8rem;
+  background-color: #f5f547;
+  transform: rotate(45deg);
+}
+.plan-detail {
+  font-size: 1.6rem;
+  line-height: 1.8;
+  text-align: center;
+  font-weight: 500;
+}
+.feature-icon {
+  color: #1e3746;
+  height: 3.6rem;
+  width: 3.6rem;
+  margin-bottom: 3.2rem;
+  background-color: #f39f19;
+  padding: 1.6rem;
+  border-radius: 50%;
+}
+.feature-title {
+  font-size: 2.4rem;
+  color: #3f3f3f;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+.feature-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
 }
