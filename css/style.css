@@ -107,6 +107,7 @@ html {
   font-weight: 400;
   margin-bottom: 4.8rem;
 }
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -515,4 +516,69 @@ html {
 .feature-text {
   font-size: 1.8rem;
   line-height: 1.8;
+}
+.session-cta {
+  padding: 9.6rem 0;
+}
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+
+  box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  background-image: linear-gradient(90deg, #c6ffdd, #fbd786, #f7797d);
+  height: 55rem;
+  overflow: hidden;
+}
+.cta-text-box {
+  color: #1e3746;
+  padding: 6.4rem;
+}
+.cta .heading-secondary {
+  margin-bottom: 3.2rem;
+}
+.cta-img-box {
+  background-image: url("https://images.unsplash.com/photo-1618173745276-71981719c0ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1965&q=80");
+  background-size: cover;
+  background-position: center;
+}
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+}
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+  margin-bottom: 4.8rem;
+}
+.cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+.cta-form select,
+.cta-form input {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.6rem;
+  font-family: inherit;
+  border-style: none;
+  border-radius: 10px;
+}
+.cta-form select {
+}
+.btn--form {
+  background-color: #1e3746;
+  border: none;
+  align-self: end;
+  padding: 1rem;
+  transition: all 500ms;
+}
+.btn--form:hover {
+  background-color: #ffffff;
+  color: #1e3746;
 }
